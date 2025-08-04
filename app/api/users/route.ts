@@ -48,7 +48,6 @@ export async function POST(request: Request) {
                 authorId:newUser.id
             }
         });
-
         return NextResponse.json({ all_users: all_users, all_posts: all_posts }, { status: 201 });
     } catch (error) {
         console.error("Database error:", error);
